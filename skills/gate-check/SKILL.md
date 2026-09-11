@@ -20,5 +20,5 @@ Exit `0` means the score passes. Exit `1` means the score fails. Exit `2` means 
 If the binary, config, or output is invalid, report the error. Never convert an error into a pass.
 
 The observer CLI itself can exit successfully when a score fails. This helper compares the score with `scoring.passing_score`.
-A quality pass does not authorize a send, payment, deletion, or publication.
-Do not execute an external action from this skill.
+A quality pass does not prove completion and does not authorize a send, payment, deletion, or publication.
+Do not execute an external action from this skill. Use `/completion-check` for declared local evidence.

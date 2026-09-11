@@ -1,0 +1,17 @@
+{
+  "workspace_root": "/workspace",
+  "expected_outcome": "artifact written",
+  "source_revision": {
+    "path": ".",
+    "expected_head": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "checks": [
+    {
+      "id": "result-exists",
+      "kind": "existence",
+      "claim": "artifact written",
+      "scope": "local-artifact",
+      "path": "artifacts/result.json"
+    }
+  ]
+}

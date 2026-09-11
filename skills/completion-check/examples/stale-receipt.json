@@ -1,0 +1,20 @@
+{
+  "workspace_root": "/workspace",
+  "expected_outcome": "artifact written",
+  "source_revision": {
+    "path": ".",
+    "expected_head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "max_age_seconds": 3600,
+  "evidence_timestamp": "2020-01-01T00:00:00Z",
+  "checks": [
+    {
+      "id": "result-hash",
+      "kind": "sha256",
+      "claim": "artifact written",
+      "scope": "local-artifact",
+      "path": "artifacts/result.json",
+      "expected_sha256": "55f66c2c5aeb275ff5b1ae26b321d5c0b8ceda8c034b19c2643e046d024919f3"
+    }
+  ]
+}

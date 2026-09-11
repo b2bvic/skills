@@ -1,0 +1,18 @@
+{
+  "workspace_root": "/workspace",
+  "expected_outcome": "artifact written",
+  "source_revision": {
+    "path": ".",
+    "expected_head": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "checks": [
+    {
+      "id": "result-hash",
+      "kind": "sha256",
+      "claim": "artifact written",
+      "scope": "local-artifact",
+      "path": "artifacts/result.json",
+      "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}
